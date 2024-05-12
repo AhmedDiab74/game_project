@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
     {
         if (transform.position.y < -60f)
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("level1");
 
         }
     }
@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
                 // Game Win
                 winText.SetActive(true);
                 source.PlayOneShot(winnerClip);
+                SceneManager.LoadScene("level2");
 
             }
         }
